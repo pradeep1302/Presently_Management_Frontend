@@ -20,17 +20,12 @@ const Sidebar = (props) => {
     navigate("/");
   };
   var menu;
-  if (role == "doctor")
+  if (role == "teacher")
     menu = [
       {
-        title: "Appointments",
+        title: "Lectures",
         icon: <FaTh />,
-        path: "/doctor",
-      },
-      {
-        title: "Patients",
-        icon: <BiImageAdd />,
-        path: "/patients",
+        path: "/teacher",
       },
       {
         title: "Account",
@@ -55,14 +50,9 @@ const Sidebar = (props) => {
   else
     menu = [
       {
-        title: "Appointments",
+        title: "Lectures",
         icon: <FaTh />,
-        path: "/patient",
-      },
-      {
-        title: "Reports",
-        icon: <BiImageAdd />,
-        path: `/reports/${id}`,
+        path: "/student",
       },
       {
         title: "Account",

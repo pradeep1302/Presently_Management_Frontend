@@ -59,6 +59,7 @@ export default function EnableAppt() {
 			if (!data) {
 				setmaxSize(0);
 				setSubjectName("");
+				setDisabled(false)
 			} else {
 				if (data.teacher === id)
 					setDisabled(false)
